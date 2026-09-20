@@ -52,7 +52,7 @@ Site com 5 páginas em HTML e CSS, com menu de navegação em todas elas.
 
 ---
 
-## 📁 Estrutura do projeto
+## 📁 Estrutura do Projeto
 
 ```
 vinharia-agnello/
