@@ -66,3 +66,26 @@ li {
     padding: 15px;
 }
 
+.tabela-vinhos {
+    width: 100%;
+    border-collapse: collapse;
+    background-color: #ffffff;
+}
+
+.tabela-vinhos caption {
+    font-weight: bold;
+    padding: 8px;
+}
+
+.tabela-vinhos th {
+    background-color: #5b1a2a;
+    color: #f5ecd9;
+    padding: 10px;
+    text-align: left;
+}
+
+.tabela-vinhos td {
+    padding: 10px;
+    border-bottom: 1px solid #dddddd;
+}
+
