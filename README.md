@@ -2,11 +2,11 @@
 
 Site e sistema básico de cadastro de vinhos da **Vinheria Agnello**, desenvolvido como checkpoint da disciplina de Desenvolvimento Web.
 
-Site publicado (GitHub Pages): 
+Site publicado (GitHub Pages): https://maria-basilio.github.io/vinharia-agnello/
 
 ---
 
-## 📖 Sobre o caso 
+## Sobre o caso 
 A **Vinheria Agnello** é uma empresa familiar de São Paulo, com mais de 15 anos de atuação e uma loja física. É dirigida por Giulio, o proprietário, e sua filha Bianca.
 
 O grande diferencial da vinheria é o atendimento especializado: os vendedores conhecem uvas, regiões e vinícolas e ajudam o cliente a escolher o vinho ideal, sugerindo harmonização com pratos e ocasiões. Os vinhos também passam por **armazenagem controlada**, principalmente os raros e de maior valor. 
@@ -15,7 +15,7 @@ Com o impacto da pandemia, a vinheria decidiu entrar no mundo digital, buscando 
 
 ---
 
-## 👥 Integrantes
+## Integrantes
 
 - Beatriz Martin da Paz
 - Maria Eduarda Basilio
@@ -52,7 +52,7 @@ Site com 5 páginas em HTML e CSS, com menu de navegação em todas elas.
 
 ---
 
-## 📁 Estrutura do Projeto
+## Estrutura do Projeto
 
 ```
 vinharia-agnello/
@@ -76,13 +76,9 @@ vinharia-agnello/
 
 --- 
 
-## 🛠️ Tecnologias
+## Tecnologias
 
 - HTML5
 - CSS
 - JavaScript
 - Git e GitHub 
-
----
-
-## 🖼️ Demonstração 

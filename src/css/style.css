@@ -189,10 +189,10 @@ li {
     background-color:#991e5a;
     
 }
-.descricaoaaoaoao {
+.descricao-inicio {
     text-align: center;
-    color: #dbe586;
-    background-color:#991e5a;
+    color: #efc0da;
+    background-color: #991e5a;
     padding: 20px;
 }
 .experiencia {
@@ -200,4 +200,71 @@ li {
     color: #dbe586;
     background-color:#991e5a;
     padding: 20px;
+}
+.bloco-degustacao {
+    background-color: #991e5a;
+    color: #dbe586;
+    width: 100%;
+    margin: 20px 0;
+    padding: 5px 0;
+}
+.bloco-degustacao h2 {
+    border-bottom: none;
+    margin: 0;
+}
+.bloco-contato {
+    background-color: #991e5a;
+    color: #efc0da;
+    padding: 20px;
+    text-align: center;
+}
+
+.bloco-contato h2 {
+    color: #dbe586;
+    border-bottom: none;
+    margin: 0 0 20px 0;
+}
+
+.formulario {
+    width: 500px;
+    max-width: 90%;
+    margin: 0 auto;
+    text-align: left;
+}
+
+.formulario label {
+    display: block;
+    margin-top: 12px;
+    margin-bottom: 5px;
+}
+
+.formulario input,
+.formulario textarea {
+    width: 100%;
+    box-sizing: border-box;
+    padding: 10px;
+    border: 2px solid #efc0da;
+    border-radius: 5px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.formulario textarea {
+    height: 120px;
+    resize: vertical;
+}
+
+.formulario button {
+    display: block;
+    margin: 20px auto 0;
+    padding: 10px 25px;
+    background-color: #dbe586;
+    color: #991e5a;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-weight: bold;
+}
+
+.formulario button:hover {
+    background-color: #efc0da;
 }

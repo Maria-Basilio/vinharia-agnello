@@ -1,55 +1,78 @@
 <!DOCTYPE html>
-<html lang="PT-BR">
+<html lang="pt-BR">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-<link rel="stylesheet" href="../css/style.css">
-    <title class="titlecontactpage">Contato - Vinheria Agnello</title>
+    <meta name="description" content="Entre em contato com a Vinheria Agnello para tirar dúvidas e receber informações sobre nossos vinhos e atendimento.">
+    <meta name="keywords" content="Vinheria Agnello, contato, vinhos, atendimento, informações">
+
+    <link rel="stylesheet" href="../css/style.css">
+
+    <title>Contato - Vinheria Agnello</title>
 </head>
+
 <body>
- <header class="cabecalho">
-        <h1  class="marca">Vinheria Agnello</h1>
+
+    <header class="cabecalho">
+        <h1 class="marca">Vinheria Agnello</h1>
 
         <nav class="menu">
-            <a href="../../index.html"> Início</a>
+            <a href="../../index.html">Início</a>
             <a href="historia.html">História</a>
-            <a href="vinhos.html" aria-current="page">Vinhos</a>
+            <a href="vinhos.html">Vinhos</a>
             <a href="experiencia.html">Experiência</a>
-            <a href="contato.html">Contato</a>
+            <a href="contato.html" aria-current="page">Contato</a>
         </nav>
     </header>
-<hr>
- <img src="vinharia-agnello/src/assets/imgs/VinheriaAgnello.png
-" alt="Contatos vinheria" class="logo" class="imagem-destaque" width="1000" height="500">
+
+    <hr>
+
+    <img
+        src="../assets/imgs/VinheriaAgnello.png"
+        alt="Contatos vinheria"
+        class="logo imagem-destaque"
+        style="width: 700px; height: auto; display: block; margin: 0 auto;"
+    >
+
+    <section class="bloco-contato">
+
+        <h2>Entre em contato</h2>
+
+        <form class="formulario">
+
+            <label for="nome">Nome:</label>
+            <input type="text" id="nome" name="nome">
+
+            <label for="email">E-mail:</label>
+            <input type="email" id="email" name="email">
+
+            <label for="mensagem">Mensagem:</label>
+            <textarea id="mensagem" name="mensagem"></textarea>
+
+            <button type="submit">Enviar mensagem</button>
+
+        </form>
+
+    </section>
 
     <div class="ajuda">
-        <a href="mailto:agnellovinheria@gmail.com">Fale com a nossa equipe</a> ou veja <a href="experiencia.html">Como é o nosso atendimento</a>
+        <a href="mailto:agnellovinheria@gmail.com">
+            Fale com a nossa equipe
+        </a>
+        ou veja
+        <a href="experiencia.html">
+            Como é o nosso atendimento
+        </a>
     </div>
-   
-    <script src="src/js/script.js"></script>
 
-</body>
+    <script src="../js/script.js"></script>
 
-</html>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-     <footer class="rodape">
+    <footer class="rodape">
         <p>&copy; 2026 Vinheria Agnello - Projeto acadêmico</p>
     </footer>
 
 </body>
+
 </html>
