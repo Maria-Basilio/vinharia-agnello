@@ -1,0 +1,61 @@
+:root {
+    --lima: #dbe586;
+    --vinho: #991e5a;
+}
+
+.formulario button {
+    transition: all 0.4s;
+}
+
+.formulario button:not(:disabled):hover {
+    box-shadow: 0 4px 10px rgba(91, 26, 42, 0.45);
+}
+
+
+.menu a {
+    box-shadow: inset 0 -2px 0 0 transparent;
+    transition: color 0.3s, box-shadow 0.5s;
+}
+
+.menu a:not([aria-current="page"]):hover {
+    color: var(--lima);
+    box-shadow: inset 0 -2px 0 0 var(--lima);
+}
+
+.menu a[aria-current="page"] {
+    color: var(--lima);
+    box-shadow: inset 0 -2px 0 0 var(--lima);
+}
+
+.formulario input,
+.formulario textarea {
+    font-size: 16px;
+    transition: border-color 0.3s, box-shadow 0.4s, font-size 0.3s;
+}
+
+.formulario input:focus,
+.formulario textarea:focus {
+    outline: none;
+    border-color: var(--lima);
+    box-shadow: 0 0 0 3px rgba(219, 229, 134, 0.6);
+    font-size: 18px;
+}
+
+.tabela-vinhos tbody tr:nth-child(odd) {
+    background-color: #991e5a;
+    color: #efc0da;
+}
+
+.tabela-vinhos tbody tr:nth-child(even) {
+    background-color: #b02668;
+    color: #efc0da;
+}
+
+.tabela-vinhos tbody tr:hover {
+    background-color: var(--lima);
+    color: var(--vinho);
+}
+
+.tabela-vinhos tr {
+    transition: background-color 0.3s, color 0.3s;
+}

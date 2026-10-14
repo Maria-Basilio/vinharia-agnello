@@ -1,3 +1,6 @@
+@import url("efeitos.css");
+
+
 body {
     font-family: Arial, Helvetica, sans-serif;
     background-color: #b9c9e7;
@@ -106,7 +109,7 @@ li {
     background-color: #5b1a2a;
     color: #b9c9e7;
     padding: 10px;
-    text-align: left;
+    text-align: center;
 }
 
 .tabela-vinhos td {
