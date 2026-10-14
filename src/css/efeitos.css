@@ -157,8 +157,6 @@ h2:hover::after {
     color: var(--rosa);
 }
 
-
-
 .ajuda p::selection {
     color: var(--lima);
 }
@@ -167,4 +165,22 @@ h2:hover::after {
 }
 .cabecalhoindex h1::selection {
     color: var(--rosa);
+}
+
+
+.imagem-destaque {
+    transition: transform 0.3s ease;
+}
+.imagem-destaque:hover {
+    transform: scale(1.04);
+}
+.formulario button {
+    transition: transform 0.3s ease;
+}
+.formulario button:hover {
+    transform: scale(1.08);
+}
+
+.cabecalhoindex h1::selection {
+    color: #efc0da !important;
 }
