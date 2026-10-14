@@ -3,12 +3,22 @@
     --vinho: #991e5a;
 }
 
+ /* PSEUDO-CLASSES E TRANSIÇÕES */
+
 .formulario button {
     transition: all 0.4s;
 }
 
-.formulario button:not(:disabled):hover {
-    box-shadow: 0 4px 10px rgba(91, 26, 42, 0.45);
+.formulario label {
+    transition: color 0.3s;
+}
+
+.formulario:focus-within label {
+    color: var(--lima);
+}
+
+.formulario input:user-invalid {
+    border-color: #ff8a8a;
 }
 
 
@@ -59,3 +69,9 @@
 .tabela-vinhos tr {
     transition: background-color 0.3s, color 0.3s;
 }
+
+.tabela-vinhos tbody tr:last-child td {
+    border-bottom: none;
+}
+
+ /* PSEUDO-CLASSES E TRANSIÇÕES */
