@@ -174,9 +174,6 @@ h2:hover::after {
 .imagem-destaque:hover {
     transform: scale(1.04);
 }
-.formulario button {
-    transition: transform 0.3s ease;
-}
 .formulario button:hover {
     transform: scale(1.08);
 }
@@ -233,7 +230,7 @@ h2:hover::after {
 }
 
 .imagem-destaque {
-    animation: entradaImagem 1s ease-out both;
+    animation: entradaImagem 1s ease-out;
 }
 
 @media (prefers-reduced-motion: reduce) {

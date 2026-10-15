@@ -64,7 +64,8 @@ vinharia-agnello/
     ├── assets/
     │   └── imgs/
     ├── css/
-    │   └── style.css
+    │   ├── style.css
+    │   └── efeitos.css 
     ├── js/
     │   └── script.js
     └── pages/
@@ -72,8 +73,57 @@ vinharia-agnello/
         ├── vinhos.html
         ├── experiencia.html
         └── contato.html
+
 ```
 
+## 🎨 Efeitos Visuais
+
+No Check-Point 02, aprimoramos o site da Vinheria Agnello com efeitos visuais no arquivo `src/css/efeitos.css`. Ele é importado na primeira linha do `style.css` com `@import url("efeitos.css");`, pois a regra `@import` só é válida antes das demais regras do arquivo. Os efeitos foram aplicados nas páginas já existentes, sem alterar a estrutura do site.
+
+### Pseudo-classes
+
+| Pseudo-classe | Onde foi aplicada | Efeito |
+|---|---|---|
+| `:hover` | Links do menu | A cor muda para lima e aparece uma linha embaixo do link |
+| `:hover` | Linhas da tabela de vinhos | A linha ganha fundo lima e texto vinho |
+| `:hover` | Títulos `h2` | A linha decorativa embaixo do título aumenta |
+| `:hover` | Imagens de destaque | A imagem aumenta levemente (`scale(1.04)`) |
+| `:hover` | Botão de envio do formulário | O botão aumenta levemente (`scale(1.08)`) |
+| `:focus` | Campos do formulário de contato | Borda lima, brilho ao redor e aumento da fonte |
+| `:focus-within` | Formulário de contato | Os rótulos ficam lima quando algum campo está ativo |
+| `:user-invalid` | Campo de e-mail | A borda fica avermelhada quando o e-mail digitado é inválido |
+| `:nth-child()` | Linhas da tabela de vinhos | Cores alternadas entre linhas pares e ímpares |
+| `:last-child` | Última linha da tabela | Remove a borda inferior repetida |
+| `:not()` | Menu | O efeito de hover não é aplicado ao link da página atual |
+
+### Pseudo-elementos
+
+- **`::after`** nos títulos `h2`: cria uma linha decorativa rosa (54px de largura por 2px de altura), centralizada abaixo do título. Ao passar o mouse sobre o título, a linha cresce para 100px.
+- **`::selection`**: personaliza o texto selecionado pelo usuário em todo o site. O texto muda de cor (lima ou rosa, conforme o fundo de cada seção), sem cor de fundo na seleção.
+
+### Transformações
+
+- **`scale()`** nas imagens de destaque (`1.04`) e no botão de envio (`1.08`) ao passar o mouse.
+- **`translateY()`** e **`scale()`** nos quadros das animações de entrada, descritas mais abaixo.
+
+### Transições
+
+Todos os efeitos interativos são suavizados com `transition`, declarada no estado normal do elemento para que a animação aconteça na entrada e na saída do mouse ou do foco:
+
+- **Menu:** `transition: color 0.3s, box-shadow 0.5s`
+- **Campos do formulário:** `transition: border-color 0.3s, box-shadow 0.4s, font-size 0.3s`
+- **Rótulos do formulário:** `transition: color 0.3s`
+- **Botão de envio:** `transition: all 0.4s`
+- **Linhas da tabela:** `transition: background-color 0.3s, color 0.3s`
+- **Linha decorativa dos `h2`:** `transition: width 0.3s ease`
+- **Imagens de destaque:** `transition: transform 0.3s ease`
+
+### Animações (`@keyframes`)
+
+- **`entradaTitulo`:** o título da página inicial aparece com *fade-in* subindo 20px (1 segundo, `ease-out`).
+- **`entradaImagem`:** as imagens de destaque das páginas História, Vinhos e Contato aparecem com *fade-in* e leve aumento de escala (de 0.96 para 1).
+
+Para acessibilidade, usamos `@media (prefers-reduced-motion: reduce)`, que desativa as animações de entrada para quem configurou o sistema para reduzir movimentos.
 --- 
 
 ## Tecnologias
