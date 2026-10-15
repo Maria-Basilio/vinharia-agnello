@@ -127,7 +127,6 @@ Para acessibilidade, usamos `@media (prefers-reduced-motion: reduce)`, que desat
 --- 
 
 ## Tecnologias
-
 - HTML5
 - CSS
 - JavaScript
